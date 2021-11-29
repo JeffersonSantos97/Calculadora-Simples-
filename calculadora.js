@@ -1,7 +1,10 @@
 let n1 = document.querySelector("#n1");
 let n2 = document.querySelector("#n2");
-
 let r = document.querySelector("#result");
+let buttonS = document.getElementById("buttonSum");
+let buttonSub = document.getElementById("buttonSubtract");
+let buttonM = document.getElementById("buttonMultiply");
+let buttonShar = document.getElementById("buttonShare");
 
 
 function addition() {
@@ -26,3 +29,7 @@ function division() {
     }
 
 }
+buttonS.addEventListener("click" , addition);
+buttonSub.addEventListener("click", subtraction);
+buttonM.addEventListener("click",multiplication);
+buttonShar.addEventListener("click", division);
